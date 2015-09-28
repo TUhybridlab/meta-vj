@@ -8,14 +8,12 @@ SRC_URI = "git://github.com/j-be/vj-control-server.git;user=git;protocol=ssh"
 
 # TODO: Remove bash on init.d add
 RDEPENDS_${PN} = "python \
-                  python-modules \
-\
-                  python-flask-socketio \
-                  python-itsdangerous \
-\
+                  python-logging \
+                  python-threading \
+                  python-Flask \
+                  python-Flask-SocketIO \
                   python-pyserial \
                   rpi-gpio \
-                  bash \
 "
 
 SRCREV = "${AUTOREV}"
@@ -25,7 +23,7 @@ S = "${WORKDIR}/git"
 DEST_DIR = "/opt/vj-control-server"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r8"
+PR = "r11"
 
 inherit update-rc.d
 
