@@ -7,6 +7,6 @@ RDEPENDS_${PN} = "python-io python-email python-zlib python-pkgutil python-html"
 SRC_URI[md5sum] = "66a488e0ac50a9ec326fe020b3083450"
 SRC_URI[sha256sum] = "9d2771e4c89be127bc4bac056ab7ceaf0e0064c723d6b6e195739c3af4fd5c1d"
 
-PR = "r4"
+PR = "r5"
 
-inherit pypi
+inherit pypi setuptools
