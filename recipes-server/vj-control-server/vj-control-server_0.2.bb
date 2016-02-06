@@ -13,7 +13,7 @@ RDEPENDS_${PN} = "python \
                   python-Flask \
                   python-Flask-SocketIO \
                   python-pyserial \
-                  rpi-gpio \
+                  python-recordclass \
 "
 
 SRCREV = "${AUTOREV}"
@@ -34,6 +34,7 @@ do_install () {
   cp -a ${S}/static/* ${D}${DEST_DIR}/static/
 
   install -m 0555 ${S}/vj-control-server.py ${D}${DEST_DIR}
+  install -m 0555 ${S}/vj_serial.py ${D}${DEST_DIR}
   install -m 0444 ${S}/log.ini ${D}${DEST_DIR}
 
   install -d ${D}${sysconfdir}/init.d
