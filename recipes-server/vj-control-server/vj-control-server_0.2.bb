@@ -1,5 +1,5 @@
 DESCRIPTION = "Virtual Jump Simulator control server"
-HOMEPAGE = "owly.duckdns.org/vjs/"
+HOMEPAGE = "jumpcu.be"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=f93075c1428685cef952d61fa0baf5aa"
 DEPENDS = ""
