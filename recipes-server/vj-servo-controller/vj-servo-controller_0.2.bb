@@ -3,11 +3,11 @@ HOMEPAGE = "jumpcu.be"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=038a301e5fa71c8df7a6afedcbd17608"
 
-SRC_URI = "git://github.com/j-be/vj-servo-controller.git;user=git;protocol=ssh"
+SRC_URI = "git://github.com/j-be/vj-servo-controller.git;user=git;protocol=ssh;branch=multiprocessing"
 
 RDEPENDS_${PN} = "python \
                   python-logging \
-                  python-threading \
+                  python-multiprocessing \
                   python-flask \
                   python-Flask-SocketIO \
                   python-pyserial \
