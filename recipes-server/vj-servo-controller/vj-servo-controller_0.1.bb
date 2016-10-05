@@ -8,7 +8,7 @@ SRC_URI = "git://github.com/j-be/vj-servo-controller.git;user=git;protocol=ssh"
 RDEPENDS_${PN} = "python \
                   python-logging \
                   python-threading \
-                  python-Flask \
+                  python-flask \
                   python-Flask-SocketIO \
                   python-pyserial \
                   python-recordclass \
@@ -23,7 +23,7 @@ S = "${WORKDIR}/git"
 DEST_DIR = "/opt/vj-servo-controller"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r1"
+PR = "r2"
 
 inherit update-rc.d
 
