@@ -1,11 +1,8 @@
 DESCRIPTION = "Maxon EPOS2 servo controller C library"
 HOMEPAGE = "http://www.maxonmotor.com/"
-
-# TODO: Find out and add file
 LICENSE = "PROPRIETARY"
-do_qa_configure () {
-}
-#LIC_FILES_CHKSUM = "file://LICENSE;md5="
+LIC_FILES_CHKSUM = "file://doc/EPOS%20Command%20Library.pdf;md5=086cb8a1c1c825494a56179ad4302938"
+
 
 SRC_URI = "file://EPOS-Linux-Library-En.zip"
 
