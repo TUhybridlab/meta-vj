@@ -14,6 +14,6 @@ RDEPENDS_${PN} = "python-flask \
 SRC_URI[md5sum] = "9710332e17262e8f1efc81dcefffd8c0"
 SRC_URI[sha256sum] = "93407798fddd7258fdd1fc7f4c50251d2f7cbcc820194312920dac62748d0e65"
 
-PR = "r5"
+PR = "r8"
 
 inherit pypi setuptools
