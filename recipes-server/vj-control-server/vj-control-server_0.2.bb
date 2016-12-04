@@ -4,26 +4,31 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=f93075c1428685cef952d61fa0baf5aa"
 DEPENDS = ""
 
-SRC_URI = "git://github.com/j-be/vj-control-server.git;user=git;protocol=ssh"
+SRC_URI = "git://github.com/j-be/vj-control-server.git;user=git;protocol=ssh;branch=socketio-1.0"
 
-# TODO: Remove bash on init.d add
 RDEPENDS_${PN} = "python \
                   python-logging \
                   python-threading \
                   python-flask \
                   python-Flask-SocketIO \
+                  python-socketio \
+                  python-engineio \
+                  python-gevent \
+                  python-gevent-websocket \
+                  python-six \
+                  python-compression \
+                  python-importlib \
                   python-pyserial \
                   python-recordclass \
 "
 
-SRCREV = "${AUTOREV}"
-
 S = "${WORKDIR}/git"
+SRCREV = "${AUTOREV}"
 
 DEST_DIR = "/opt/vj-control-server"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r11"
+PR = "r13"
 
 inherit update-rc.d
 

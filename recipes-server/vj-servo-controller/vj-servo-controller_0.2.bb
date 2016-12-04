@@ -7,9 +7,18 @@ SRC_URI = "git://github.com/j-be/vj-servo-controller.git;user=git;protocol=ssh;b
 
 RDEPENDS_${PN} = "python \
                   python-logging \
+                  python-threading \
                   python-multiprocessing \
+                  python-enum34 \
                   python-flask \
                   python-Flask-SocketIO \
+                  python-socketio \
+                  python-engineio \
+                  python-gevent \
+                  python-gevent-websocket \
+                  python-six \
+                  python-compression \
+                  python-importlib \
                   python-pyserial \
                   python-recordclass \
                   python-ctypes \
@@ -19,11 +28,12 @@ RDEPENDS_${PN} = "python \
 SRCREV = "${AUTOREV}"
 
 S = "${WORKDIR}/git"
+SRCREV = "${AUTOREV}"
 
 DEST_DIR = "/opt/vj-servo-controller"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r2"
+PR = "r10"
 
 inherit update-rc.d
 
@@ -33,9 +43,10 @@ do_install () {
   install -d ${D}${DEST_DIR}/static
   cp -a ${S}/static/* ${D}${DEST_DIR}/static/
 
+  install -m 0555 ${S}/epos_control_server.py ${D}${DEST_DIR}
   install -m 0444 ${S}/epos_lib_wrapper.py ${D}${DEST_DIR}
   install -m 0444 ${S}/position_fetcher.py ${D}${DEST_DIR}
-  install -m 0555 ${S}/epos_control_server.py ${D}${DEST_DIR}
+  install -m 0444 ${S}/servo_position_watcher.py ${D}${DEST_DIR}
   install -m 0444 ${S}/log.ini ${D}${DEST_DIR}
 
   install -d ${D}${sysconfdir}/init.d
