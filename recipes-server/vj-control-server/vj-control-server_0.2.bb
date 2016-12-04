@@ -10,7 +10,7 @@ SRC_URI = "git://github.com/j-be/vj-control-server.git;user=git;protocol=ssh"
 RDEPENDS_${PN} = "python \
                   python-logging \
                   python-threading \
-                  python-Flask \
+                  python-flask \
                   python-Flask-SocketIO \
                   python-pyserial \
                   python-recordclass \
