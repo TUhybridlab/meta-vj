@@ -13,15 +13,18 @@ RDEPENDS_${PN} += "libgcc \
                    python-re \
 "
 
+SRC_URI = "file://0001-Patch-out-configure-since-it-breaks-cross-compile.patch"
 SRC_URI[md5sum] = "bb32a2f852a4997138014d5007215c6e"
 SRC_URI[sha256sum] = "cb15cf73d69a2eeefed330858f09634e2c50bf46da9f9e7635730fcfb872c02c"
 
-PR = "r9"
+PR = "r11"
 
 inherit pypi setuptools
 
 do_configure_append () {
   cd libev
   ./configure --host=${HOST_ARCH}
+  cd ../c-ares
+  ./configure --host=${HOST_ARCH} CONFIG_COMMANDS= CONFIG_FILES=
   cd ..
 }
