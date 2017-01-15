@@ -8,7 +8,7 @@ SRC_URI = "git://github.com/j-be/vj-aerome-scent-controller.git;user=git;protoco
 RDEPENDS_${PN} = "python \
                   python-logging \
                   python-threading \
-                  python-Flask \
+                  python-flask \
                   python-Flask-SocketIO \
                   rpi-gpio \
 "
