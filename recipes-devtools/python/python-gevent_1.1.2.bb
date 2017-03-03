@@ -11,13 +11,14 @@ RDEPENDS_${PN} += "libgcc \
                    python-mime \
                    python-pprint \
                    python-re \
+                   python-ctypes \
 "
 
 SRC_URI = "file://0001-Patch-out-configure-since-it-breaks-cross-compile.patch"
 SRC_URI[md5sum] = "bb32a2f852a4997138014d5007215c6e"
 SRC_URI[sha256sum] = "cb15cf73d69a2eeefed330858f09634e2c50bf46da9f9e7635730fcfb872c02c"
 
-PR = "r11"
+PR = "r12"
 
 inherit pypi setuptools
 
