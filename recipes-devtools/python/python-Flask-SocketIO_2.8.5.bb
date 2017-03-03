@@ -1,6 +1,6 @@
 SUMMARY = "Socket.IO integration for Flask applications"
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://PKG-INFO;md5=da3f5c3e7289cd8d3cef97904f85c757"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=38cc21254909604298ce763a6e4440a0"
 
 RDEPENDS_${PN} = "python-flask \
                   python-socketio \
@@ -11,8 +11,8 @@ RDEPENDS_${PN} = "python-flask \
                   python-netserver \
 "
 
-SRC_URI[md5sum] = "9710332e17262e8f1efc81dcefffd8c0"
-SRC_URI[sha256sum] = "93407798fddd7258fdd1fc7f4c50251d2f7cbcc820194312920dac62748d0e65"
+SRC_URI[md5sum] = "0b59cc04a3efb0dd6922d162b8bbf88e"
+SRC_URI[sha256sum] = "1f4fc467b2b4b94786d51c7c210f2bd05a419e4adc7cbfa4e4218e74a4c96fdd"
 
 PR = "r8"
 
