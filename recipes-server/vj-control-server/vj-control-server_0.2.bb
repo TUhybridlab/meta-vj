@@ -4,7 +4,7 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=f93075c1428685cef952d61fa0baf5aa"
 DEPENDS = ""
 
-SRC_URI = "git://github.com/j-be/vj-control-server.git;user=git;protocol=ssh;branch=socketio-1.0"
+SRC_URI = "git://github.com/j-be/vj-control-server.git;user=git;protocol=ssh;branch=master"
 
 RDEPENDS_${PN} = "python \
                   python-logging \
@@ -29,7 +29,7 @@ SRCREV = "${AUTOREV}"
 DEST_DIR = "/opt/vj-control-server"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r14"
+PR = "r15"
 
 inherit update-rc.d
 
