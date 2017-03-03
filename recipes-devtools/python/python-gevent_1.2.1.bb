@@ -15,17 +15,17 @@ RDEPENDS_${PN} += "libgcc \
 "
 
 SRC_URI = "file://0001-Patch-out-configure-since-it-breaks-cross-compile.patch"
-SRC_URI[md5sum] = "bb32a2f852a4997138014d5007215c6e"
-SRC_URI[sha256sum] = "cb15cf73d69a2eeefed330858f09634e2c50bf46da9f9e7635730fcfb872c02c"
+SRC_URI[md5sum] = "6700a2433c8e0635425e6798760efc81"
+SRC_URI[sha256sum] = "3de300d0e32c31311e426e4d5d73b36777ed99c2bac3f8fbad939eeb2c29fa7c"
 
-PR = "r12"
+PR = "r17"
 
 inherit pypi setuptools
 
 do_configure_append () {
-  cd libev
+  cd deps/libev
   ./configure --host=${HOST_ARCH}
   cd ../c-ares
-  ./configure --host=${HOST_ARCH} CONFIG_COMMANDS= CONFIG_FILES=
-  cd ..
+  ./configure --disable-dependency-tracking --host=${HOST_ARCH} CONFIG_COMMANDS=
+  cd ../..
 }
