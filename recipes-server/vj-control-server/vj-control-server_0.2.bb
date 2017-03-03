@@ -20,6 +20,7 @@ RDEPENDS_${PN} = "python \
                   python-importlib \
                   python-pyserial \
                   python-recordclass \
+                  python-modules \
 "
 
 S = "${WORKDIR}/git"
@@ -28,7 +29,7 @@ SRCREV = "${AUTOREV}"
 DEST_DIR = "/opt/vj-control-server"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r13"
+PR = "r14"
 
 inherit update-rc.d
 

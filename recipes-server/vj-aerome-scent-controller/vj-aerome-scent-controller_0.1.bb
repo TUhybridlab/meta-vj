@@ -15,6 +15,7 @@ RDEPENDS_${PN} = "python \
                   python-gevent-websocket \
                   python-Flask-SocketIO \
                   rpi-gpio \
+                  python-modules \
 "
 #                  python-recordclass
 
@@ -25,7 +26,7 @@ S = "${WORKDIR}/git"
 DEST_DIR = "/opt/vj-aerome-scent-controller"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r4"
+PR = "r5"
 
 inherit update-rc.d
 

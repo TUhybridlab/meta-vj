@@ -22,6 +22,7 @@ RDEPENDS_${PN} = "python \
                   python-pyserial \
                   python-recordclass \
                   python-ctypes \
+                  python-modules \
                   libEposCmd \
 "
 
