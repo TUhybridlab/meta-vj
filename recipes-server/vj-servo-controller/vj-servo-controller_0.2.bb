@@ -3,7 +3,7 @@ HOMEPAGE = "jumpcu.be"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=038a301e5fa71c8df7a6afedcbd17608"
 
-SRC_URI = "git://github.com/j-be/vj-servo-controller.git;user=git;protocol=ssh;branch=multiprocessing"
+SRC_URI = "git://github.com/j-be/vj-servo-controller.git;user=git;protocol=ssh;branch=new-ui"
 
 RDEPENDS_${PN} = "python \
                   python-logging \
@@ -33,7 +33,7 @@ SRCREV = "${AUTOREV}"
 DEST_DIR = "/opt/vj-servo-controller"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r10"
+PR = "r11"
 
 inherit update-rc.d
 
