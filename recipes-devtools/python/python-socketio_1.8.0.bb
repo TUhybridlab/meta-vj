@@ -8,9 +8,9 @@ RDEPENDS_${PN} = "python-six \
 
 PYPI_PACKAGE = "python-socketio"
 
-SRC_URI[md5sum] = "808045ba69eed8eba994b8629334d7f6"
-SRC_URI[sha256sum] = "d9b3c2ffe23705fa651482c1d45e55561283649686a80d3ffd9ed695de21e2fa"
+SRC_URI[md5sum] = "325aee1a7a1585dbb0416c3178d7833b"
+SRC_URI[sha256sum] = "4d662601c2fec639b5bb8fdfdb1c53cac73c44efb0b39ee428184bddf2f49479"
 
-PR = "r2"
+PR = "r3"
 
 inherit pypi setuptools
