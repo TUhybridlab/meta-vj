@@ -1,6 +1,6 @@
 SUMMARY = "Coroutine-based network library"
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=2dbb33d00e1fd31c7041460a81ac0bd2"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=4de99aac27b470c29c6c309e0c279b65"
 
 DEPENDS += "python-greenlet \
             python-pip \
@@ -15,10 +15,10 @@ RDEPENDS_${PN} += "libgcc \
 "
 
 SRC_URI = "file://0001-Patch-out-configure-since-it-breaks-cross-compile.patch"
-SRC_URI[md5sum] = "6700a2433c8e0635425e6798760efc81"
-SRC_URI[sha256sum] = "3de300d0e32c31311e426e4d5d73b36777ed99c2bac3f8fbad939eeb2c29fa7c"
+SRC_URI[md5sum] = "7f0baf355384fe5ff2ecf66853422554"
+SRC_URI[sha256sum] = "4791c8ae9c57d6f153354736e1ccab1e2baf6c8d9ae5a77a9ac90f41e2966b2d"
 
-PR = "r17"
+PR = "r19"
 
 inherit pypi setuptools
 
