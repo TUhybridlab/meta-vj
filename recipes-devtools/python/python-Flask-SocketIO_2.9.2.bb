@@ -11,9 +11,9 @@ RDEPENDS_${PN} = "python-flask \
                   python-netserver \
 "
 
-SRC_URI[md5sum] = "0b59cc04a3efb0dd6922d162b8bbf88e"
-SRC_URI[sha256sum] = "1f4fc467b2b4b94786d51c7c210f2bd05a419e4adc7cbfa4e4218e74a4c96fdd"
+SRC_URI[md5sum] = "1f8521101d2c9b4155cf521fbce3740c"
+SRC_URI[sha256sum] = "0fb686f9d85f4f34dc6609f62fa96fe15176a6ea7e6179149d319fabc54c543b"
 
-PR = "r8"
+PR = "r9"
 
 inherit pypi setuptools
