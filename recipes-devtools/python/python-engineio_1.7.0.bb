@@ -7,9 +7,9 @@ RDEPENDS_${PN} = "python-six \
 
 PYPI_PACKAGE = "python-engineio"
 
-SRC_URI[md5sum] = "6a029514857b60441caf005ce8d6c65a"
-SRC_URI[sha256sum] = "ab78658ffc80b7e8fa0fb66bdf2c928961019294d8e02f2eca69d8613a663001"
+SRC_URI[md5sum] = "379fe9c3630337533c0b79098b0bdf8b"
+SRC_URI[sha256sum] = "fca35c7e4af42475552d53eea04a9280e2ccd331a032f41d17290ff3125a2291"
 
-PR = "r3"
+PR = "r4"
 
 inherit pypi setuptools
