@@ -8,8 +8,8 @@ RDEPENDS_${PN} = "python-six \
 
 PYPI_PACKAGE = "python-socketio"
 
-SRC_URI[md5sum] = "325aee1a7a1585dbb0416c3178d7833b"
-SRC_URI[sha256sum] = "4d662601c2fec639b5bb8fdfdb1c53cac73c44efb0b39ee428184bddf2f49479"
+SRC_URI[md5sum] = "ae922f1489dbb16c82eb276de299327f"
+SRC_URI[sha256sum] = "f42d02bf6f446c09e0bd2f7842734dfc4eb49e5079130060a0e29068bd0cad29"
 
 PR = "r3"
 
