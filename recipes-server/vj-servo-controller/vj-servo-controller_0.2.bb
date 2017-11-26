@@ -23,7 +23,7 @@ RDEPENDS_${PN} = "python \
                   python-recordclass \
                   python-ctypes \
                   python-modules \
-                  libEposCmd \
+                  libeposcmd \
 "
 
 SRCREV = "${AUTOREV}"
@@ -34,7 +34,7 @@ SRCREV = "${AUTOREV}"
 DEST_DIR = "/opt/vj-servo-controller"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r12"
+PR = "r13"
 
 inherit update-rc.d
 
