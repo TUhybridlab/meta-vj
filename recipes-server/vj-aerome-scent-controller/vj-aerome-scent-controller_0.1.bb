@@ -13,7 +13,7 @@ RDEPENDS_${PN} = "python \
                   python-engineio \
                   python-gevent \
                   python-gevent-websocket \
-                  python-Flask-SocketIO \
+                  python-flask-socketio \
                   rpi-gpio \
                   python-modules \
 "
@@ -26,7 +26,7 @@ S = "${WORKDIR}/git"
 DEST_DIR = "/opt/vj-aerome-scent-controller"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r5"
+PR = "r6"
 
 inherit update-rc.d
 

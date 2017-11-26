@@ -11,7 +11,7 @@ RDEPENDS_${PN} = "python \
                   python-multiprocessing \
                   python-enum34 \
                   python-flask \
-                  python-Flask-SocketIO \
+                  python-flask-socketio \
                   python-socketio \
                   python-engineio \
                   python-gevent \
@@ -34,7 +34,7 @@ SRCREV = "${AUTOREV}"
 DEST_DIR = "/opt/vj-servo-controller"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r13"
+PR = "r14"
 
 inherit update-rc.d
 

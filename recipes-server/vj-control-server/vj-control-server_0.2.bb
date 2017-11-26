@@ -10,7 +10,7 @@ RDEPENDS_${PN} = "python \
                   python-logging \
                   python-threading \
                   python-flask \
-                  python-Flask-SocketIO \
+                  python-flask-socketio \
                   python-socketio \
                   python-engineio \
                   python-gevent \
@@ -29,7 +29,7 @@ SRCREV = "${AUTOREV}"
 DEST_DIR = "/opt/vj-control-server"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r15"
+PR = "r16"
 
 inherit update-rc.d
 
