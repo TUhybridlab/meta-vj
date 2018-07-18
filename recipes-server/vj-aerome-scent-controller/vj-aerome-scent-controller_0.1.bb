@@ -5,19 +5,12 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=834adb3f7384a82927b71c503635ceaf"
 
 SRC_URI = "git://github.com/j-be/vj-aerome-scent-controller.git;user=git;protocol=ssh"
 
-RDEPENDS_${PN} = "python \
-                  python-logging \
-                  python-threading \
-                  python-flask \
-                  python-socketio \
-                  python-engineio \
-                  python-gevent \
-                  python-gevent-websocket \
-                  python-flask-socketio \
-                  rpi-gpio \
-                  python-modules \
+RDEPENDS_${PN} = " \
+  python \
+  python-modules \
+  python-flask-socketio \
+  rpi-gpio \
 "
-#                  python-recordclass
 
 SRCREV = "${AUTOREV}"
 
@@ -26,7 +19,7 @@ S = "${WORKDIR}/git"
 DEST_DIR = "/opt/vj-aerome-scent-controller"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r6"
+PR = "r7"
 
 inherit update-rc.d
 

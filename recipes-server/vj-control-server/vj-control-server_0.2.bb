@@ -6,12 +6,12 @@ DEPENDS = ""
 
 SRC_URI = "git://github.com/j-be/vj-control-server.git;user=git;protocol=ssh;branch=master"
 
-RDEPENDS_${PN} = "python \
-                  python-logging \
-                  python-ctypes \
-                  python-pyserial \
-                  python-recordclass \
-                  python-flask-socketio \
+RDEPENDS_${PN} = " \
+  python \
+  python-modules \
+  python-pyserial \
+  python-recordclass \
+  python-flask-socketio \
 "
 
 S = "${WORKDIR}/git"
@@ -20,7 +20,7 @@ SRCREV = "${AUTOREV}"
 DEST_DIR = "/opt/vj-control-server"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r19"
+PR = "r20"
 
 inherit update-rc.d
 

@@ -5,25 +5,14 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=038a301e5fa71c8df7a6afedcbd17608"
 
 SRC_URI = "git://github.com/j-be/vj-servo-controller.git;user=git;protocol=ssh;branch=master"
 
-RDEPENDS_${PN} = "python \
-                  python-logging \
-                  python-threading \
-                  python-multiprocessing \
-                  python-enum34 \
-                  python-flask \
-                  python-flask-socketio \
-                  python-socketio \
-                  python-engineio \
-                  python-gevent \
-                  python-gevent-websocket \
-                  python-six \
-                  python-compression \
-                  python-importlib \
-                  python-pyserial \
-                  python-recordclass \
-                  python-ctypes \
-                  python-modules \
-                  libeposcmd \
+RDEPENDS_${PN} = " \
+  python \
+  python-modules \
+  python-enum34 \
+  python-pyserial \
+  python-recordclass \
+  python-flask-socketio \
+  libeposcmd \
 "
 
 SRCREV = "${AUTOREV}"
@@ -34,7 +23,7 @@ SRCREV = "${AUTOREV}"
 DEST_DIR = "/opt/vj-servo-controller"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r14"
+PR = "r15"
 
 inherit update-rc.d
 
