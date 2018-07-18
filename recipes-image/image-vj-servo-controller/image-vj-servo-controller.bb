@@ -1,9 +1,7 @@
-include recipes-core/images/rpi-hwup-image.bb
+include recipes-image/vj-base-image/vj-base-image.bb
 
-IMAGE_INSTALL += "openssh \
-                  vj-servo-controller \
+IP_FINAL_TUPLE = "51"
+
+IMAGE_INSTALL += " \
+  vj-servo-controller \
 "
-
-IMAGE_LINGUAS = "en-us"
-
-export IMAGE_BASENAME = "image-vj-servo-controller"

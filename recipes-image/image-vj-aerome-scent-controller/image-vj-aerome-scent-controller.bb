@@ -1,9 +1,7 @@
-include recipes-core/images/rpi-hwup-image.bb
+include recipes-image/vj-base-image/vj-base-image.bb
 
-IMAGE_INSTALL += "openssh \
-                  vj-aerome-scent-controller \
+IP_FINAL_TUPLE = "52"
+
+IMAGE_INSTALL += " \
+  vj-aerome-scent-controller \
 "
-
-IMAGE_LINGUAS = "en-us"
-
-export IMAGE_BASENAME = "image-vj-aerome-scent-controller"
