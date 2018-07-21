@@ -8,6 +8,7 @@ SRC_URI = "git://github.com/j-be/vj-servo-controller.git;user=git;protocol=ssh;b
 RDEPENDS_${PN} = " \
   python \
   python-modules \
+  python-future \
   python-enum34 \
   python-pyserial \
   python-recordclass \
@@ -23,7 +24,7 @@ SRCREV = "${AUTOREV}"
 DEST_DIR = "/opt/vj-servo-controller"
 
 # Package Revision, Update this whenever you change the recipe.
-PR = "r15"
+PR = "r16"
 
 inherit update-rc.d
 
