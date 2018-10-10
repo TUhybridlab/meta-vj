@@ -9,8 +9,8 @@ RDEPENDS_${PN} = " \
 
 PYPI_PACKAGE = "python-engineio"
 
-SRC_URI[md5sum] = "cf8868acedc242b30ad3d24060a8d8e1"
-SRC_URI[sha256sum] = "d35c50db73bf372f82975dc87f18f1cbfab7d5bed2dfc2553ae784579502a461"
+SRC_URI[md5sum] = "92d2e1b62083ce8f0dcd8fd905b0dd9d"
+SRC_URI[sha256sum] = "871f4d022eb9171e380281266ba2aef0759b264ba862350bc94e7a597a98a443"
 
 PR = "r0"
 
