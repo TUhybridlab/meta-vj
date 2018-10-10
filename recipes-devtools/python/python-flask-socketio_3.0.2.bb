@@ -10,8 +10,8 @@ RDEPENDS_${PN} = " \
   python-gevent-websocket \
 "
 
-SRC_URI[md5sum] = "939dcbc27ba58dee3cb5c6575683cf61"
-SRC_URI[sha256sum] = "034c36bad808f93efd5b0aeafd740dc314b0a848f17e9ec6c387c74b3f22dfe7"
+SRC_URI[md5sum] = "50a4d55bf3c6574a21ea4a5cc995ea21"
+SRC_URI[sha256sum] = "3da4a08c482acf0f3ab9ffb15fe6d820c1deacfa1a906f6e98cbab40795f57c3"
 
 PR = "r0"
 
