@@ -6,7 +6,8 @@ This is a Yocto layer for the Virtual Jump Simulator. It provides:
  * additional Python dependencies not (yet) present in OpenEmbedded (recipes-devtools)
  * the recipes for the individual server (recipes-server)
  * the recipe for Maxon Motor's `libeposcmd`. **If you wish to build this** be
-   sure to first download the approiate binary from https://www.maxonmotor.com/
+   sure to first download the appropriate binary from https://www.maxonmotor.com/
+   and put it in `recipes-support/libEposCmd/files`.
 
 # Usage
 
